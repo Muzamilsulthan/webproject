@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container{
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        font-size: larger;
+        border-radius: 20%;
+        border: 1px solid rgb(250, 9, 9);
+        width: 50ch;
+        height: 50vh;
+        text-align: center;
+        } 
+        body{
+            color: rgb(250, 9, 9);
+            height: 200vh;
+            background-image: url(../../image/parking.webp);
+            background-repeat:no-repeat ;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+        #hide{
+            
+            border: 1px solid rgb(250, 9, 9);
+            border-collapse:collapse ;
+            position: absolute;
+            top: 100vh;
+            left: 55vh;
+        }
+        th,td{
+            padding: 15px;
+            border: 1px solid rgb(250, 9, 9);
+        }
+        #heading{
+            text-align: center;
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">
+        Parking Slot
+    </h1>
+    <div id="container">
+        <br/>
+        <br/>
+        customer name : <input type="text" id="name">
+        <br/>
+        <br/>
+        customer bike no : <input type="text" id="bike">
+        <br/>
+        <br/>
+        check in time : <input type="time" id="intime">
+        <br/>
+        <br/>
+        check out time : <input type="time" id="outtime">
+        <br/>
+        <br/>
+        <button id="button">Submit</button>
+        <br/>
+        <br/>
+    </div>
+    <table id="hide">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Customer Name</th>
+                <th>Customer Bike Name</th>
+                <th>Check-in Time</th>
+                <th>Check-out Time</th>
+            </tr>
+        </thead>
+        <tbody id="row1">
+
+        </tbody>
+    </table>
+    <script src="../../Document/js/task5.js"></script>
+</body>
+</html>
